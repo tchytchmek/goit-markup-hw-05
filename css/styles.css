@@ -480,8 +480,7 @@ overflow: hidden;
 
     outline: none;
 
-     transition-property: border-color;
-     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-input.subscribe::placeholder{
     font-weight: 400;
@@ -502,7 +501,7 @@ overflow: hidden;
     text-align: center;
 }
 
-.button.subscribe:hover{
+.button.subscribe:hover , .button.subscribe:focus{
     background-color: #31d0aa;
 }
 .subscribe-icon {
@@ -576,7 +575,7 @@ overflow: hidden;
    background-color: #E7E9FC;
 
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-   background-cokor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
    width: 24px;
    height: 24px;
@@ -620,8 +619,7 @@ overflow: hidden;
 
      outline: none;
 
-     transition-property: border-color;
-     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-input:focus{
@@ -647,8 +645,7 @@ fill:  #4D5AE5;
     outline: none;
     resize: none;
 
-    transition-property: border-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feedback-comment:focus{
     color: black;
