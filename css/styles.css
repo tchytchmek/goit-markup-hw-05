@@ -386,8 +386,8 @@ overflow: hidden;
 }
 .footer > .container{
     display: flex;
-    gap:120px;
     align-items: baseline;
+    justify-content: space-between;
 }
 .footer-container > .logo {
     display: block;
@@ -464,14 +464,24 @@ overflow: hidden;
 }
 .user-input.subscribe {
     padding: 8px 16px;
-    border-color: #FFFFFF;
     background-color: #2E2F42;
+
 
     width: 264px;
     height: 40px;
 
     color: #fff;
     font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 2.0;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+
+    outline: none;
+
+     transition-property: border-color;
+     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-input.subscribe::placeholder{
     font-weight: 400;
@@ -521,6 +531,8 @@ overflow: hidden;
     
     pointer-events: none;
     visibility: hidden
+
+    
 }
 
 .modal-overlay.is-open{
@@ -537,9 +549,15 @@ overflow: hidden;
 
     position: relative;
     transform: translateY(20px);
+
+    box-shadow:
+  0px 1px 1px rgba(46, 47, 66, 0.14),
+  0px 1px 3px rgba(46, 47, 66, 0.12),
+  0px 2px 1px rgba(46, 47, 66, 0.14);
 }
 .close-icon{
    display: block;
+   fill: #2e2f42;
 
    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
    transition-property: fill;
@@ -553,12 +571,15 @@ overflow: hidden;
     
    padding: 8px;
 
-   border: 1px solid #8E8F99;
+   border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    background-color: #E7E9FC;
 
-   transition-property: border-color, background-cokor;
-   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   background-cokor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   width: 24px;
+   height: 24px;
 
 }
 .close-icon-wrapper:hover, .close-icon-wrapper:focus{
@@ -612,6 +633,7 @@ fill:  #4D5AE5;
 
 .feedback-comment{
     width: 360px;
+    height: 120px;
 
     font-size: 12px;
     line-height: 1.16667;
@@ -691,9 +713,11 @@ background-color: #404BBF;
     border-radius: 2px;
     margin-right: 8px;
     padding: 4px 3px;
+    width: 16px;
+    height: 16px;
 
-    transition-property: background-color border-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-icon{
     fill:#FFFFFF;
