@@ -449,7 +449,7 @@
         </div>
         <div class="subscribe-wrapper">
             <p class="subscribe-text">Subscribe</p>
-            <div class="subscribe-container">
+            <form class="subscribe-container">
                 <input 
                 type="email" 
                 name="subscriber-email" 
@@ -462,7 +462,7 @@
                       <use href="./images/icons.svg#envelope"></use>
                   </svg>
                 </button>
-            </div>
+            </form>
         </div>
     </div>
 </footer>
@@ -477,7 +477,8 @@
             <label for="user-name" class="feedback-label"> Name </label>
               <div class="input-wrap">
                 <input
-                type="name"
+                type="text"
+                id="user-name"
                 name="user-name"
                 class="user-input"
                 required/>
@@ -492,6 +493,7 @@
                 <input
                 type="tel"
                 name="user-phone"
+                id="user-phone"
                 class="user-input"
                 required/>
                 <svg class="feedback-icon" width="18" height="24">
@@ -505,6 +507,7 @@
                 <input
                 type="email"
                 name="user-email"
+                id="user-email"
                 class="user-input"
                 required/>
                 <svg class="feedback-icon" width="18" height="24">
@@ -517,6 +520,7 @@
               <textarea
               class="feedback-comment"
               name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               rows="7">
             </textarea>
@@ -526,9 +530,10 @@
         <label class="checkbox-label">
           <input 
           class="visually-hidden checkbox"
+          name="user-checkbox"
           type="checkbox" />
           <span class="check-icon-wrapper">
-            <svg  class="check-icon" width="10" height="8">
+            <svg  class="check-icon" width="16px" height="16px">
               <use href="./images/icons.svg#check"></use>
                     </svg>
           </span>
@@ -537,11 +542,11 @@
         </label>
         <button class="button overlay" type="submit">Send</button>
       </form>
-      <div class="close-icon-wrapper">
+      <button class="close-icon-wrapper">
         <svg  class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
         </svg>
-      </div>
+      </button>
     </div>
    </div>
  
